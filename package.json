@@ -1,10 +1,16 @@
 {
-  "name": "bartopfixed",
+  "name": "@lucianobarauna/v-bartopfixed",
+  "author": "Luciano Baraúna",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superuber/casa-firjan-big-button.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:bundle": "vue-cli-service build --target lib --name bartopfixed ./src/components/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -23,5 +29,13 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
+  ],
+  "main": "./dist/bartopfixed.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
   ]
 }
